@@ -1,4 +1,4 @@
-# goelves
+# embedding-elvish-shell
 
 A sample Go application that embeds the [Elvish](https://elv.sh/) interpreter to provide shell scripting capabilities.
 
@@ -15,20 +15,21 @@ A sample Go application that embeds the [Elvish](https://elv.sh/) interpreter to
 ## Quick Start
 
 ```shell
-cd ~/go/src/goelves
-go build -o goelves main.go
-./goelves sample.elv hello elvish world
+cd ~/go/src/embedding-elvish-shell
+go build -o embedded-elvish-example
+./embedded-elvish-example sample.elv hello elvish world
 ```
 
 ## Usage
 
 ```shell
-./goelves <script.elv> [arguments...]
+./embedded-elvish-example <script.elv> [arguments...]
 ```
 
 ### Accessing Arguments in Elvish
 
-Inside your Elvish script, you can access the arguments passed to `goelves` using the `$args` variable:
+Inside your Elvish script, you can access the arguments passed to
+`embedded-elvish-example` using the `$args` variable:
 
 ```elvish
 echo "The script is:" (src)[name]
