@@ -1,4 +1,4 @@
-module goelves
+module elvembed
 
 go 1.25.5
 
